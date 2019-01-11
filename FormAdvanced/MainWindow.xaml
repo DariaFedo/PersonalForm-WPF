@@ -1,0 +1,28 @@
+﻿<Window x:Class="FormAdvanced.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormAdvanced"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+
+    <Grid x:Name="Form">
+        
+            
+        <!--Rows in a form-->
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="100" />
+            <RowDefinition  Height="200"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+
+        <!-- Form Header -->
+        <TextBlock x:Name="Header" Grid.Row="0" Width="700" Height="100" TextAlignment="Center" Padding="10" FontSize="40"
+                   Foreground="WhiteSmoke" Text="FORMULARZ" Background="DarkTurquoise" FontFamily="Garamond" FontWeight="Bold" >
+        </TextBlock>
+
+    </Grid>
+
+</Window>

@@ -1,0 +1,32 @@
+E:\FormAdvanced\FormAdvanced\bin\Debug\FormAdvanced.exe.config
+E:\FormAdvanced\FormAdvanced\bin\Debug\FormAdvanced.exe
+E:\FormAdvanced\FormAdvanced\bin\Debug\FormAdvanced.pdb
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csprojAssemblyReference.cache
+E:\FormAdvanced\FormAdvanced\obj\Debug\MainWindow.g.cs
+E:\FormAdvanced\FormAdvanced\obj\Debug\App.g.cs
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced_MarkupCompile.cache
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced_MarkupCompile.lref
+E:\FormAdvanced\FormAdvanced\obj\Debug\MainWindow.baml
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.g.resources
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.Properties.Resources.resources
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csproj.GenerateResource.cache
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csproj.CoreCompileInputs.cache
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.exe
+E:\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.pdb
+D:\GITHUB Files\FormAdvanced\FormAdvanced\bin\Debug\FormAdvanced.exe.config
+D:\GITHUB Files\FormAdvanced\FormAdvanced\bin\Debug\FormAdvanced.exe
+D:\GITHUB Files\FormAdvanced\FormAdvanced\bin\Debug\FormAdvanced.pdb
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csprojAssemblyReference.cache
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\DataArray.g.cs
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\MainWindow.g.cs
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\App.g.cs
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced_MarkupCompile.cache
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced_MarkupCompile.lref
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\DataArray.baml
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\MainWindow.baml
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.g.resources
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.Properties.Resources.resources
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csproj.GenerateResource.cache
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csproj.CoreCompileInputs.cache
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.exe
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.pdb
