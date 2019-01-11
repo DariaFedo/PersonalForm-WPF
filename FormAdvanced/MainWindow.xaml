@@ -20,7 +20,7 @@
 
         <!-- Form Header -->
         <TextBlock x:Name="Header" Grid.Row="0" Width="700" Height="100" TextAlignment="Center" Padding="10" FontSize="40"
-                   Foreground="WhiteSmoke" Text="FORMULARZ" Background="DarkTurquoise" FontFamily="Garamond" FontWeight="Bold" >
+                   Foreground="WhiteSmoke" Text="INFORMATION FORM" Background="DarkTurquoise" FontFamily="Garamond" FontWeight="Bold" >
         </TextBlock>
 
     </Grid>

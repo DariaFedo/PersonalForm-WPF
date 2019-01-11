@@ -12,21 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Collections.ObjectModel;
-
 
 namespace FormAdvanced
 {
     /// <summary>
-    /// Logika interakcji dla klasy DataArray.xaml
+    /// Interaction logic for BasicInformation.xaml
     /// </summary>
-    public partial class DataArray : UserControl
+    public partial class BasicInformation : UserControl
     {
-        ObservableCollection<Person> peopleList = new ObservableCollection<Person>();
-
-        public DataArray()
+        public BasicInformation()
         {
             InitializeComponent();
         }
+
+      
     }
 }

@@ -30,3 +30,5 @@ D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csproj.Generate
 D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.csproj.CoreCompileInputs.cache
 D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.exe
 D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\FormAdvanced.pdb
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\BasicInformation.g.cs
+D:\GITHUB Files\FormAdvanced\FormAdvanced\obj\Debug\BasicInformation.baml
