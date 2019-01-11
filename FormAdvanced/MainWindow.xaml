@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormAdvanced"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
+        Title="MainWindow" Height="800" Width="900">
 
-    <Grid x:Name="Form">
-        
-            
+
+    <Grid x:Name="Form" Background="Gray">
+
+
         <!--Rows in a form-->
         <Grid.RowDefinitions>
             <RowDefinition  Height="100" />
@@ -19,9 +20,8 @@
         </Grid.RowDefinitions>
 
         <!-- Form Header -->
-        <TextBlock x:Name="Header" Grid.Row="0" Width="700" Height="100" TextAlignment="Center" Padding="10" FontSize="40"
-                   Foreground="WhiteSmoke" Text="INFORMATION FORM" Background="DarkTurquoise" FontFamily="Garamond" FontWeight="Bold" >
-        </TextBlock>
+        <TextBlock x:Name="Header" Grid.Row="0" Height="100" TextAlignment="Center" Padding="10" FontSize="48"
+                   Foreground="WhiteSmoke" Text="INFORMATION FORM" Background="LightSeaGreen" FontFamily="Garamond" />
 
     </Grid>
 

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Globalization;
 
 namespace FormAdvanced
 {
@@ -20,11 +21,26 @@ namespace FormAdvanced
     /// </summary>
     public partial class BasicInformation : UserControl
     {
+        List<string> countryList = new List<string>();
+        CultureInfo[] countries = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
+        RegionInfo region;
+
         public BasicInformation()
         {
             InitializeComponent();
         }
 
-      
+      private void BasicInformation_Load(object sender, EventArgs e)
+        {
+            foreach(CultureInfo country in countries)
+            {
+                region = new RegionInfo(country.LCID);
+                if (!(countryList.Contains(region.EnglishName)))
+                {
+                    countryList.Add(region.EnglishName);
+                    CountryBox.Items.Add(region.EnglishName + " (" + region.ISOCurrencySymbol + ")");
+                }
+            }
+        }
     }
 }

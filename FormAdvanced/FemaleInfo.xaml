@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="FormAdvanced.BasicInformation"
+﻿<UserControl x:Class="FormAdvanced.FemaleInfo"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:FormAdvanced"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="600">
-
+    
     <UserControl.Resources>
         <!-- Base Textbox Style -->
         <Style TargetType="TextBox" x:Key="TextBoxBaseStyle">
@@ -49,7 +49,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
     </UserControl.Resources>
 
 
@@ -57,36 +57,37 @@
     <Grid Background="LightSeaGreen">
 
 
-            <TextBlock HorizontalAlignment="Left" Height="50" Width="500" Text="Enter your personal info" VerticalAlignment="Top"
+        <TextBlock HorizontalAlignment="Left" Height="50" Width="500" Text="Enter your personal info" VerticalAlignment="Top"
                    Margin="22,32,0,0" FontSize="34" FontFamily="Calibri Light"/>
 
 
-            <!-- TextBoxes -->
-            <Label Content="First Name" Style="{StaticResource LabelBaseStyle}" Margin="22,154,0,265"/>
-            <TextBox x:Name="name" Style="{StaticResource TextBoxBaseStyle}" Margin="22,124,378,296"  />
+        <!-- TextBoxes -->
+        <Label Content="First Name" Style="{StaticResource LabelBaseStyle}" Margin="22,154,0,265"/>
+        <TextBox x:Name="name" Style="{StaticResource TextBoxBaseStyle}" Margin="22,124,378,296"  />
 
-            <Label Content="Last Name" Style="{StaticResource LabelBaseStyle}" Margin="22,220,0,199"/>
-            <TextBox x:Name="lastName" Style="{StaticResource TextBoxBaseStyle}" Margin="22,190,378,230"/>
+        <Label Content="Last Name" Style="{StaticResource LabelBaseStyle}" Margin="22,220,0,199"/>
+        <TextBox x:Name="lastName" Style="{StaticResource TextBoxBaseStyle}" Margin="22,190,378,230"/>
 
-            <Label Content="Your E-mail" Style="{StaticResource LabelBaseStyle}" Margin="22,286,0,132" />
-            <TextBox x:Name="email" Style="{StaticResource TextBoxBaseStyle}" Margin="22,256,378,164"/>
+        <Label Content="Your E-mail" Style="{StaticResource LabelBaseStyle}" Margin="22,286,0,132" />
+        <TextBox x:Name="email" Style="{StaticResource TextBoxBaseStyle}" Margin="22,256,378,164"/>
 
-            <Label Content="Select your country" Style="{StaticResource LabelBaseStyle}" Width="150" Margin="277,154,0,265" />
+        <Label Content="Select your country" Style="{StaticResource LabelBaseStyle}" Width="150" Margin="277,154,0,265" />
 
-            <Label Content="Age" Style="{StaticResource LabelBaseStyle}" Margin="277,220,0,199"/>
-            <TextBox x:Name="age" Style="{StaticResource TextBoxBaseStyle}" Margin="277,190,249,230" Width="Auto"  />
+        <Label Content="Age" Style="{StaticResource LabelBaseStyle}" Margin="277,220,0,199"/>
+        <TextBox x:Name="age" Style="{StaticResource TextBoxBaseStyle}" Margin="277,190,249,230" Width="Auto"  />
 
-            <!-- Sex RadioButtons -->
-            <RadioButton Content="Male" HorizontalAlignment="Left" Margin="277,274,0,146" Height="30" Foreground="White" FontSize="15"/>
-            <RadioButton Content="Female" HorizontalAlignment="Left" Margin="360,274,0,146" Height="30" Foreground="White" FontSize="15"/>
-            
-            <!-- Country Combobox -->
-            <ComboBox x:Name="CountryBox" HorizontalAlignment="Left" Margin="277,124,0,0" VerticalAlignment="Top" Width="200" Height="30"/>
+        <!-- Sex RadioButtons -->
+        <RadioButton Content="Male" HorizontalAlignment="Left" Margin="277,274,0,146" Height="30" Foreground="White" FontSize="15"/>
+        <RadioButton Content="Female" HorizontalAlignment="Left" Margin="360,274,0,146" Height="30" Foreground="White" FontSize="15"/>
 
-            <!-- Submit Button -->
-            <Button Style="{StaticResource RoundButtonTemplate}" Content="Submit" HorizontalAlignment="Left" Margin="360,362,0,34"/>
+        <!-- Country Combobox -->
+        <ComboBox x:Name="CountryBox" HorizontalAlignment="Left" Margin="277,124,0,0" VerticalAlignment="Top" Width="200" Height="30"/>
 
-            
+        <!-- Submit Button -->
+        <Button Style="{StaticResource RoundButtonTemplate}" Content="Submit" HorizontalAlignment="Left" Margin="360,362,0,34"/>
+
+
     </Grid>
-    
+
 </UserControl>
+
