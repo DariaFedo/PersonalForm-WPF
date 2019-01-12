@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:FormAdvanced"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="900">
+       
 
 
     <Grid x:Name="Form" Background="Gray">

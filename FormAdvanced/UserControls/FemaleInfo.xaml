@@ -69,7 +69,9 @@
         <TextBox x:Name="lastName" Style="{StaticResource TextBoxBaseStyle}" Margin="22,190,378,230"/>
 
         <Label Content="Your E-mail" Style="{StaticResource LabelBaseStyle}" Margin="22,286,0,132" />
-        <TextBox x:Name="email" Style="{StaticResource TextBoxBaseStyle}" Margin="22,256,378,164"/>
+        <TextBox x:Name="email" Style="{StaticResource TextBoxBaseStyle}" Margin="22,256,378,164">
+           
+        </TextBox>
 
         <Label Content="Select your country" Style="{StaticResource LabelBaseStyle}" Width="150" Margin="277,154,0,265" />
 
