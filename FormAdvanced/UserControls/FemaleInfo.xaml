@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FormAdvanced"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="600">
+             d:DesignHeight="250" d:DesignWidth="600">
     
     <UserControl.Resources>
         <!-- Base Textbox Style -->
@@ -23,32 +23,13 @@
         <!-- Base Label Style -->
         <Style TargetType="Label" x:Key="LabelBaseStyle">
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Width" Value="100"/>
+            <Setter Property="Width" Value="200"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="FontFamily" Value="Calibri Light"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
 
-        <!--Round Button Style -->
-        <Style x:Key="RoundButtonTemplate" TargetType="Button">
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Background" Value="IndianRed"/>
-            <Setter Property="Width" Value="150"/>
-            <Setter Property="Height" Value="45"/>
-            <Setter Property="FontFamily" Value="Century Gothic"/>
-            <Setter Property="FontWeight" Value="Medium"/>
-            <Setter Property="FontSize" Value="13"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="15" Background="{TemplateBinding Background}"
-                                BorderThickness="1">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+        
 
     </UserControl.Resources>
 
@@ -57,36 +38,24 @@
     <Grid Background="LightSeaGreen">
 
 
-        <TextBlock HorizontalAlignment="Left" Height="50" Width="500" Text="Enter your personal info" VerticalAlignment="Top"
-                   Margin="22,32,0,0" FontSize="34" FontFamily="Calibri Light"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Width="500" VerticalAlignment="Top"
+                   Margin="22,23,0,0" FontSize="20" FontFamily="Calibri Light"><Run Text="Additional "/><Run Text="questions"/></TextBlock>
 
 
         <!-- TextBoxes -->
-        <Label Content="First Name" Style="{StaticResource LabelBaseStyle}" Margin="22,154,0,265"/>
-        <TextBox x:Name="name" Style="{StaticResource TextBoxBaseStyle}" Margin="22,124,378,296"  />
+        <Label Content="Favourite comsmetic" Style="{StaticResource LabelBaseStyle}" Margin="22,88,0,131"/>
+        <TextBox x:Name="favCosmetic" Style="{StaticResource TextBoxBaseStyle}" Text="{Binding Cosmetic, Mode=TwoWay}" Margin="22,58,378,162"  />
 
-        <Label Content="Last Name" Style="{StaticResource LabelBaseStyle}" Margin="22,220,0,199"/>
-        <TextBox x:Name="lastName" Style="{StaticResource TextBoxBaseStyle}" Margin="22,190,378,230"/>
+        <Label Content="Hobby" Style="{StaticResource LabelBaseStyle}" Margin="22,149,0,70"/>
+        <TextBox x:Name="hobby" Style="{StaticResource TextBoxBaseStyle}" Text="{Binding Hobby, Mode=TwoWay}" Margin="22,119,378,101"/>
 
-        <Label Content="Your E-mail" Style="{StaticResource LabelBaseStyle}" Margin="22,286,0,132" />
-        <TextBox x:Name="email" Style="{StaticResource TextBoxBaseStyle}" Margin="22,256,378,164">
+        <Label Content="Favourite film" Style="{StaticResource LabelBaseStyle}" Margin="22,210,0,7" />
+        <TextBox x:Name="favFilm" Style="{StaticResource TextBoxBaseStyle}" Text="{Binding Film, Mode=TwoWay}" Margin="22,180,378,40">
            
         </TextBox>
 
-        <Label Content="Select your country" Style="{StaticResource LabelBaseStyle}" Width="150" Margin="277,154,0,265" />
-
-        <Label Content="Age" Style="{StaticResource LabelBaseStyle}" Margin="277,220,0,199"/>
-        <TextBox x:Name="age" Style="{StaticResource TextBoxBaseStyle}" Margin="277,190,249,230" Width="Auto"  />
-
-        <!-- Sex RadioButtons -->
-        <RadioButton Content="Male" HorizontalAlignment="Left" Margin="277,274,0,146" Height="30" Foreground="White" FontSize="15"/>
-        <RadioButton Content="Female" HorizontalAlignment="Left" Margin="360,274,0,146" Height="30" Foreground="White" FontSize="15"/>
-
-        <!-- Country Combobox -->
-        <ComboBox x:Name="CountryBox" HorizontalAlignment="Left" Margin="277,124,0,0" VerticalAlignment="Top" Width="200" Height="30"/>
-
         <!-- Submit Button -->
-        <Button Style="{StaticResource RoundButtonTemplate}" Content="Submit" HorizontalAlignment="Left" Margin="360,362,0,34"/>
+        <Image x:Name="Male" HorizontalAlignment="Left" Height="194" Margin="331,49,0,0" VerticalAlignment="Top" Width="191" Source="/FormAdvanced;component/female.png"/>
 
 
     </Grid>

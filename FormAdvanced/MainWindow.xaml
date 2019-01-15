@@ -3,26 +3,58 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FormAdvanced"
+        xmlns:my="clr-namespace:FormAdvanced"   
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="900">
-       
+        Title="MainWindow" Height="950" Width="700">
 
+    <!--// DEKLARACJANAMESPACE-->
+    <Window.Resources>
+        <!--Round Button Style -->
+        <Style x:Key="RoundButtonTemplate" TargetType="Button">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="IndianRed"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="FontFamily" Value="Century Gothic"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="15" Background="{TemplateBinding Background}"
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 
-    <Grid x:Name="Form" Background="Gray">
-
-
+    <Grid x:Name="Form" Background="Gray" Margin="0,0,0,-31">
+        <my:DataArray
+            Grid.Row="1"/>
+        <my:BasicInformation
+            Grid.Row="2"/>
+        <my:MaleInfo
+            Grid.Row="3"/>
+        
+        
         <!--Rows in a form-->
         <Grid.RowDefinitions>
             <RowDefinition  Height="100" />
-            <RowDefinition  Height="200"/>
-            <RowDefinition Height="300"/>
-            <RowDefinition Height="200"/>
+            <RowDefinition  Height="150"/>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
         <!-- Form Header -->
-        <TextBlock x:Name="Header" Grid.Row="0" Height="100" TextAlignment="Center" Padding="10" FontSize="48"
+        <TextBlock x:Name="Header" Grid.Row="0" TextAlignment="Center" Padding="10" FontSize="48"
                    Foreground="WhiteSmoke" Text="INFORMATION FORM" Background="LightSeaGreen" FontFamily="Garamond" />
+
+        <!-- Submit Button -->
+        <Button Grid.Row="4" Style="{StaticResource RoundButtonTemplate}" Content="Submit" HorizontalAlignment="Left" Margin="459,15,0,10" Height="50" Width="150"/>
 
     </Grid>
 

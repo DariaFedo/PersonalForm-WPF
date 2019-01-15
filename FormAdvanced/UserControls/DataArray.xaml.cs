@@ -27,6 +27,7 @@ namespace FormAdvanced
         public DataArray()
         {
             InitializeComponent();
+            peopleData.ItemsSource = peopleList;
         }
     }
 }
